@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Toys and Games</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" style="background-color:deeppink;">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white">
+                <i class="fa-solid fa-car-side fa-2x" style="color: rgb(59, 242, 255);"></i>
+                <span class="fs-4">
+                    Toy world
+                </span>
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" placeholder="Search Toys">
+                <button class="btn btn-warning">
+                    Search
+                </button>
+            </form>
+            <span class="text-white ">
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                <span class="fs-4">
+                    Cart
+                </span>
+            </span>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a class="navbar-brand fw-bold text-danger fs-3 mb-0" href="#">ToyZone</a>
+            <div class="flex-grow-1 mx-4" style="overflow: hidden;">
+                <marquee behavior="scroll" direction="left" class="text-primary fw-bold m-0 fs-5">
+                    🎉 Special Offer: Get 20% off on all Learning Toys this week! 🧸 Free Shipping on orders over ₹499!
+                    🚀
+                </marquee>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold text-secondary" href="#toys">Toys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-secondary" href="#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-secondary" href="#puzzles">Puzzles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-secondary" href="#dolls">Dolls</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-secondary" href="#learning">Learning</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="toyStoreCarousel" class="carousel slide my-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#toyStoreCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#toyStoreCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#toyStoreCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded shadow-sm">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="images/toy1.jpg" class="d-block w-100" alt="New Toys Arrival">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h5 class="fw-bold text-warning fs-3">New Toy Arrivals!</h5>
+                    <p>Explore the latest and greatest action figures, playsets, and more.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="images/toy2.jpg" class="d-block w-100" alt="Puzzles and Games">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h5 class="fw-bold text-info fs-3">Family Board Games</h5>
+                    <p>Make weekends fun with challenging puzzles and interactive tabletop games.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="images/toy3.jpg" class="d-block w-100" alt="Learning Toys">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h5 class="fw-bold text-success fs-3">Smart Learning Toys</h5>
+                    <p>Nurture creativity and STEM skills with our educational collections.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#toyStoreCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#toyStoreCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container my-5">
+        <h2 class="fw-bold mb-4 text-dark">Shop by Category</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-3 text-center">
+                <div class="p-2">
+                    <div class="card">
+                        <img src="images/baby.webp" alt="Baby" class="category-img mb-2">
+                        <h5 class="fw-semibold text-secondary">Baby</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <div class="p-2">
+                    <div class="card">
+                        <img src="images/5boy.webp" alt="Toddlers" class="category-img mb-2">
+                        <h5 class="fw-semibold text-secondary">Toddlers</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <div class="p-2">
+                    <div class="card">
+                        <img src="images/juniors.avif" alt="Junior" class="category-img mb-2">
+                        <h5 class="fw-semibold text-secondary">Junior</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <div class="p-2">
+                    <div class="card">
+                        <img src="images/teens.webp" alt="Teens" class="category-img mb-2">
+                        <h5 class="fw-semibold text-secondary">Teens</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2 class="mb-4">Popular Toys</h2>
+
+        <div id="toySlider" class="carousel carousel-dark slide" data-bs-ride="false">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row g-3 px-5">
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm text-center p-3">
+                                <img src="images/dollhouse.jpg" class="card-img-top object-fit-contain" height="200"
+                                    alt="Remote Car">
+                                <div class="card-body">
+                                    <h5>Doll House</h5>
+                                    <p class="fw-bold">₹1499</p>
+                                    <button class="btn btn-success w-100">Add Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm text-center p-3">
+                                <img src="images/horse.jpg" class="card-img-top object-fit-contain" height="200"
+                                    alt="Teddy Bear">
+                                <div class="card-body">
+                                    <h5>Inflatable Bouncing Horse Hopper</h5>
+                                    <p class="fw-bold">₹499</p>
+                                    <button class="btn btn-success w-100">Add Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm text-center p-3">
+                                <img src="images/panda.jpg" class="card-img-top object-fit-contain" height="200"
+                                    alt="Puzzle">
+                                <div class="card-body">
+                                    <h5>Silicone Panda Night Light</h5>
+                                    <p class="fw-bold">₹299</p>
+                                    <button class="btn btn-success w-100">Add Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-3 px-5">
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm text-center p-3">
+                                <img src="images/puzzel.webp" class="card-img-top object-fit-contain" height="200"
+                                    alt="Blocks">
+                                <div class="card-body">
+                                    <h5>Learning Blocks</h5>
+                                    <p class="fw-bold">₹349</p>
+                                    <button class="btn btn-success w-100">Add Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm text-center p-3">
+                                <img src="images/deddy bear.jpg" class="card-img-top object-fit-contain" height="200"
+                                    alt="Teddy Bear">
+                                <div class="card-body">
+                                    <h5>Pink Teddy</h5>
+                                    <p class="fw-bold">₹499</p>
+                                    <button class="btn btn-success w-100">Add Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm text-center p-3">
+                                <img src="images/remotecar.jpg" class="card-img-top object-fit-contain" height="200"
+                                    alt="Remote Car">
+                                <div class="card-body">
+                                    <h5>Racing Car</h5>
+                                    <p class="fw-bold">₹999</p>
+                                    <button class="btn btn-success w-100">Add Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#toySlider" data-bs-slide="prev"
+                style="width: 5%;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#toySlider" data-bs-slide="next"
+                style="width: 5%;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div
+            class="bg-warning text-dark p-4 rounded-3 d-flex flex-column flex-md-row justify-content-between align-items-center shadow-sm">
+            <div>
+                <span class="badge bg-danger text-white mb-2 uppercase fw-bold">Limited Offer</span>
+                <h3 class="fw-bold m-0">⚡ Deal of the Day: Flat 50% Off on Interactive Toys!</h3>
+                <p class="m-0 text-muted">Offer valid till midnight tonight. Use Code: <strong
+                        class="text-danger">TOY50</strong></p>
+            </div>
+            <div class="mt-3 mt-md-0">
+                <a href="#games" class="btn btn-dark btn-lg fw-bold px-4">Shop the Deal</a>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 text-center">
+        <h3 class="fw-bold mb-3">Shop by Age Range</h3>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+            <a href="#" class="btn btn-outline-primary rounded-pill px-4 fw-semibold">0 - 12 Months</a>
+            <a href="#" class="btn btn-outline-success rounded-pill px-4 fw-semibold">1 - 3 Years</a>
+            <a href="#" class="btn btn-outline-danger rounded-pill px-4 fw-semibold">3 - 5 Years</a>
+            <a href="#" class="btn btn-outline-warning text-dark rounded-pill px-4 fw-semibold">5 - 8 Years</a>
+            <a href="#" class="btn btn-outline-info text-dark rounded-pill px-4 fw-semibold">8+ Years</a>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="card border-0 bg-info bg-opacity-10 p-4 rounded-3 text-center shadow-sm">
+            <div class="text-warning fs-4 mb-2">★★★★★</div>
+            <p class="fs-5 italic text-dark px-md-5">"The Remote Car is incredibly sturdy! My son drives it over
+                everything, and the battery life lasts much longer than expected. Will definitely buy more learning
+                blocks next week."</p>
+            <h6 class="fw-bold text-secondary m-0">— Priya S., Verified Parent</h6>
+        </div>
+    </div>
+
+    <div class="container my-5 border-top border-bottom py-4 bg-white rounded shadow-sm">
+        <div class="row text-center g-4">
+            <div class="col-6 col-md-3">
+                <div class="fs-2 mb-1">🚚</div>
+                <h6 class="fw-bold m-0">Free Shipping</h6>
+                <small class="text-muted">On all orders above ₹499</small>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="fs-2 mb-1">🛡️</div>
+                <h6 class="fw-bold m-0">Secure Payments</h6>
+                <small class="text-muted">100% safe transactions</small>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="fs-2 mb-1">🔄</div>
+                <h6 class="fw-bold m-0">Easy Returns</h6>
+                <small class="text-muted">7-day no questions asked</small>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="fs-2 mb-1">🧸</div>
+                <h6 class="fw-bold m-0">Non-Toxic Toys</h6>
+                <small class="text-muted">Certified child-safe material</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-light text-center p-3 mt-5">
+        <p>Welcome</p>
+    </div>
+
+
+    <script>
+        function addCart(product) {
+            alert(product + " added to cart");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
